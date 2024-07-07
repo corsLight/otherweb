@@ -7,6 +7,8 @@ export const SearchBar = ({setResults}) => {
 
     const fetchData = (value) =>
     {
+
+        //change to endpoint
         fetch('https://jsonplaceholder.typicode.com/users')
         .then((response) => response.json())
         .then(json => {
@@ -40,3 +42,7 @@ export const SearchBar = ({setResults}) => {
 
 
     export default SearchBar;
+
+
+
+    
